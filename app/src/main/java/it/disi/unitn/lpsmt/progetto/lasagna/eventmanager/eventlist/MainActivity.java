@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         if(account != null) {
+            //Menù di navigazione per utenti autenticati
             NavHostFragment fragment = (NavHostFragment)getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
             if (fragment != null) {
                 NavController navController = fragment.getNavController();
